@@ -1,0 +1,26 @@
+a = LTE_load_params;
+a.scheduler = 'alpha fair';
+a.scheduler_params.alpha = 1;
+a.traffic_models.usetraffic_model = true;
+a.traffic_model.is_fullbuffer = false;
+a.simulation_time_tti = 300;
+a.show_network = 0;
+a.max_antenna_gain = 15 ;
+a.nr_eNodeB_rings = 1;
+a.compute_only_UEs_from_this_eNodeBs = [];
+a.delete_pathloss_at_end = 1;
+a.keep_UEs_still = 1;
+a.default_shown_GUI_cells = [];
+a.cache_network = 0;
+a.UE_cache = 0;
+a.macroscopic_pathloss_model = 'free space';
+a.shadow_fading_map_resolution = 100;
+a.shadow_fading_n_neighbors = 4;
+a.map_resolution = 50;
+a.bandwidth = 3000000;
+a.results_file = 'r_300tti_MAP2000_LdB70-dummy';
+a.minimum_coupling_loss = 70;
+a.UE_per_eNodeB = 30;
+a.inter_eNodeB_distance = 2000;
+LTE_sim_main(a)
+
